@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,400italic);
+.main-nav {
+  text-align: center; }
+  .main-nav ul {
+    list-style: none;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border: 2px solid #B7D262;
+    margin: 1rem 0;
+    border-radius: 15px;
+    overflow: hidden; }
+    .main-nav ul li a {
+      display: inline-block;
+      padding: 0.5rem 2rem;
+      text-decoration: none;
+      color: #B7D262;
+      font-weight: bold; }
+      .main-nav ul li a svg {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 0.4rem;
+        fill: #B7D262; }
+      .main-nav ul li a svg, .main-nav ul li a span {
+        vertical-align: middle; }
+    .main-nav ul li.active a {
+      background: #B7D262;
+      color: white; }
+    .main-nav ul li.active svg {
+      fill: white; }
+
+.tabs .tab {
+  display: none; }
+  .tabs .tab.active {
+    display: block; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #B7D262;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #B7D262;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #B7D262;
+}
+
+.main-header {
+  text-align: center;
+  background: #E5E0D6;
+  color: black;
+  padding: 0rem 3rem 0rem; }
+  .main-header h1 {
+    margin: 0 0 0.5rem 0; }
+  .main-header a {
+    color: white; }
+
+h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem 0; }
+
+p {
+  margin: 0 0 0.5rem 0; }
+
+main.tabs {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px; }
+
+.speaker-list {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .speaker-list li {
+    width: 32%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 40px 10px; }
+
+.schedule dt {
+  font-weight: bold; }
+
+.schedule dt ~ dt {
+  margin-top: 1rem; }
