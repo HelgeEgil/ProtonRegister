@@ -1,375 +1,375 @@
-Kommunenr,Kommunenavn,Fylkenr,Fylkenavn,RHF,HF,Befolkning2020
-3001,Halden,30,Viken,Helse Sør-Øst,Sykehuset Østfold,31444
-3002,Moss,30,Viken,Helse Sør-Øst,Sykehuset Østfold,50290
-3003,Sarpsborg,30,Viken,Helse Sør-Øst,Sykehuset Østfold,58182
-3004,Fredrikstad,30,Viken,Helse Sør-Øst,Sykehuset Østfold,83892
-3005,Drammen,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,102273
-3006,Kongsberg,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,27879
-3007,Ringerike,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,31011
-3011,Hvaler,30,Viken,Helse Sør-Øst,Sykehuset Østfold,4741
-3012,Aremark,30,Viken,Helse Sør-Øst,Sykehuset Østfold,1315
-3013,Marker,30,Viken,Helse Sør-Øst,Sykehuset Østfold,3578
-3014,Indre Østfold,30,Viken,Helse Sør-Øst,Sykehuset Østfold,45608
-3015,Skiptvet,30,Viken,Helse Sør-Øst,Sykehuset Østfold,3846
-3016,Rakkestad,30,Viken,Helse Sør-Øst,Sykehuset Østfold,8312
-3017,Råde,30,Viken,Helse Sør-Øst,Sykehuset Østfold,7633
-3018,Våler (Viken),30,Viken,Helse Sør-Øst,Sykehuset Østfold,5913
-3019,Vestby,30,Viken,Helse Sør-Øst,Sykehuset Østfold,18699
-3020,Nordre Follo,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,61032
-3021,Ås,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,20780
-3022,Frogn,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,16084
-3023,Nesodden,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,19939
-3024,Bærum,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,128982
-3025,Asker,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,96088
-3026,Aurskog-Høland,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,17754
-3027,Rælingen,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,19024
-3028,Enebakk,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,11249
-3029,Lørenskog,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,44693
-3030,Lillestrøm,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,89095
-3031,Nittedal,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,24947
-3032,Gjerdrum,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,6989
-3033,Ullensaker,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,41565
-3034,Nes,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,23898
-3035,Eidsvoll,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,26716
-3036,Nannestad,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,15074
-3037,Hurdal,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,2905
-3038,Hole,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,6859
-3039,Flå,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,1057
-3040,Nesbyen,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,3273
-3041,Gol,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,4667
-3042,Hemsedal,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,2611
-3043,Ål,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,4650
-3044,Hol,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,4504
-3045,Sigdal,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,3492
-3046,Krødsherad,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,2189
-3047,Modum,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,14273
-3048,Øvre Eiker,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,20044
-3049,Lier,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,27584
-3050,Flesberg,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,2720
-3051,Rollag,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,1370
-3052,Nore og Uvdal,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,2455
-3053,Jevnaker,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,6908
-3054,Lunner,30,Viken,Helse Sør-Øst,Sykehuset Innlandet,9144
-301,Oslo kommune,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,699827
-30101,Gamle Oslo,3,Oslo,Helse Sør-Øst,Lovisenberg Diakonale Sykehus,58671
-30102,Grünerløkka,3,Oslo,Helse Sør-Øst,Lovisenberg Diakonale Sykehus,62423
-30103,Sagene,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,45089
-30104,St. Hanshaugen,3,Oslo,Helse Sør-Øst,Lovisenberg Diakonale Sykehus,38945
-30105,Frogner,3,Oslo,Helse Sør-Øst,Diakonhjemmet Sykehus,59269
-30106,Ullern,3,Oslo,Helse Sør-Øst,Diakonhjemmet Sykehus,34569
-30107,Vestre Aker,3,Oslo,Helse Sør-Øst,Diakonhjemmet Sykehus,50157
-30108,Nordre Aker,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,52327
-30109,Bjerke,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,33422
-30110,Grorud,3,Oslo,Helse Sør-Øst,Akershus Universitetssykehus,27707
-30111,Stovner,3,Oslo,Helse Sør-Øst,Akershus Universitetssykehus,33316
-30112,Alna,3,Oslo,Helse Sør-Øst,Akershus Universitetssykehus,49801
-30113,Østensjø,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,50806
-30114,Nordstrand,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,52459
-30115,Søndre Nordstrand,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,39066
-30116,Sentrum,3,Oslo,Helse Sør-Øst,Lovisenberg Diakonale Sykehus,1471
-30117,Marka,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,1610
-3401,Kongsvinger,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,17949
-3403,Hamar,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,31999
-3405,Lillehammer,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,28425
-3407,Gjøvik,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,30267
-3411,Ringsaker,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,35073
-3412,Løten,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,7715
-3413,Stange,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,21156
-3414,Nord-Odal,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,5016
-3415,Sør-Odal,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,7978
-3416,Eidskog,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,6032
-3417,Grue,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,4548
-3418,Åsnes,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,7211
-3419,Våler (Innlandet),34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,3597
-3420,Elverum,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,21435
-3421,Trysil,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,6603
-3422,Åmot,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,4195
-3423,Stor-Elvdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,2318
-3424,Rendalen,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,1722
-3425,Engerdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,1253
-3426,Tolga,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,1551
-3427,Tynset,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,5581
-3428,Alvdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,2445
-3429,Folldal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,1530
-3430,Os,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,1855
-3431,Dovre,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,2498
-3432,Lesja,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,1986
-3433,Skjåk,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,2151
-3434,Lom,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,2211
-3435,Vågå,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,3591
-3436,Nord-Fron,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,5628
-3437,Sel,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,5531
-3438,Sør-Fron,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,3064
-3439,Ringebu,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,4385
-3440,Øyer,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,5082
-3441,Gausdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,6079
-3442,Østre Toten,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,14827
-3443,Vestre Toten,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,13572
-3446,Gran,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,13633
-3447,Søndre Land,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,5535
-3448,Nordre Land,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,6577
-3449,Sør-Aurdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,2889
-3450,Etnedal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,1256
-3451,Nord-Aurdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,6354
-3452,Vestre Slidre,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,2111
-3453,Øystre Slidre,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,3252
-3454,Vang,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,1587
-3801,Horten,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,27502
-3802,Holmestrand (tidl. Holmestrand),38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,25681
-3802,Holmestrand (tidl. Sande),38,Vestfold og Telemark,Helse Sør-Øst,Vestre Viken Helseforetak,25681
-3803,Tønsberg,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,57794
-3804,Sandefjord,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,64943
-3805,Larvik,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,47777
-3806,Porsgrunn,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,36624
-3807,Skien,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,55513
-3808,Notodden,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,13029
-3811,Færder,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,27165
-3812,Siljan,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,2349
-3813,Bamble,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,14056
-3814,Kragerø,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,10351
-3815,Drangedal,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,4093
-3816,Nome,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,6494
-3817,Midt-Telemark,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,10539
-3818,Tinn,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,5512
-3819,Hjartdal,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,1562
-3820,Seljord,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,2889
-3821,Kviteseid,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,2452
-3822,Nissedal,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,1414
-3823,Fyresdal,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,1198
-3824,Tokke,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,2140
-3825,Vinje,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,3755
-4201,Risør,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,6735
-4202,Grimstad,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,24017
-4203,Arendal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,45509
-4204,Kristiansand,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,113737
-4205,Lindesnes,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,23147
-4206,Farsund,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,9622
-4207,Flekkefjord,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,9048
-4211,Gjerstad,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,2427
-4212,Vegårshei,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,2131
-4213,Tvedestrand,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,6115
-4214,Froland,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,6098
-4215,Lillesand,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,11279
-4216,Birkenes,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,5342
-4217,Åmli,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,1801
-4218,Iveland,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,1323
-4219,Evje og Hornnes,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,3653
-4220,Bygland,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,1134
-4221,Valle,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,1169
-4222,Bykle,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,935
-4223,Vennesla,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,15123
-4224,Åseral,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,912
-4225,Lyngdal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,10480
-4226,Hægebostad,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,1704
-4227,Kvinesdal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,5883
-4228,Sirdal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,1810
-1101,Eigersund,11,Rogaland,Helse Vest,Helse Stavanger,14860
-1103,Stavanger,11,Rogaland,Helse Vest,Helse Stavanger,144699
-1106,Haugesund,11,Rogaland,Helse Vest,Helse Fonna,37444
-1108,Sandnes,11,Rogaland,Helse Vest,Helse Stavanger,81305
-1111,Sokndal,11,Rogaland,Helse Vest,Helse Stavanger,3281
-1112,Lund,11,Rogaland,Helse Vest,Helse Stavanger,3178
-1114,Bjerkreim,11,Rogaland,Helse Vest,Helse Stavanger,2789
-1119,Hå,11,Rogaland,Helse Vest,Helse Stavanger,19296
-1120,Klepp,11,Rogaland,Helse Vest,Helse Stavanger,20163
-1121,Time,11,Rogaland,Helse Vest,Helse Stavanger,19353
-1122,Gjesdal,11,Rogaland,Helse Vest,Helse Stavanger,12131
-1124,Sola,11,Rogaland,Helse Vest,Helse Stavanger,27568
-1127,Randaberg,11,Rogaland,Helse Vest,Helse Stavanger,11454
-1130,Strand,11,Rogaland,Helse Vest,Helse Stavanger,13268
-1133,Hjelmeland,11,Rogaland,Helse Vest,Helse Stavanger,2534
-1134,Suldal,11,Rogaland,Helse Vest,Helse Fonna,3784
-1135,Sauda,11,Rogaland,Helse Vest,Helse Fonna,4525
-1144,Kvitsøy,11,Rogaland,Helse Vest,Helse Stavanger,523
-1145,Bokn,11,Rogaland,Helse Vest,Helse Fonna,855
-1146,Tysvær,11,Rogaland,Helse Vest,Helse Fonna,11283
-1149,Karmøy,11,Rogaland,Helse Vest,Helse Fonna,42541
-1151,Utsira,11,Rogaland,Helse Vest,Helse Fonna,188
-1160,Vindafjord,11,Rogaland,Helse Vest,Helse Fonna,8775
-4601,Bergen,46,Vestland,Helse Vest,Helse Bergen,286930
-4602,Kinn,46,Vestland,Helse Vest,Helse Førde,17131
-4611,Etne,46,Vestland,Helse Vest,Helse Fonna,4043
-4612,Sveio,46,Vestland,Helse Vest,Helse Fonna,5775
-4613,Bømlo,46,Vestland,Helse Vest,Helse Fonna,12061
-4614,Stord,46,Vestland,Helse Vest,Helse Fonna,18919
-4615,Fitjar,46,Vestland,Helse Vest,Helse Fonna,3117
-4616,Tysnes,46,Vestland,Helse Vest,Helse Fonna,2883
-4617,Kvinnherad,46,Vestland,Helse Vest,Helse Fonna,13017
-4618,Ullensvang,46,Vestland,Helse Vest,Helse Fonna,10881
-4619,Eidfjord,46,Vestland,Helse Vest,Helse Fonna,937
-4620,Ulvik,46,Vestland,Helse Vest,Helse Bergen,1051
-4621,Voss,46,Vestland,Helse Vest,Helse Bergen,15875
-4622,Kvam,46,Vestland,Helse Vest,Helse Bergen,8497
-4623,Samnanger,46,Vestland,Helse Vest,Helse Bergen,2501
-4624,Bjørnafjorden,46,Vestland,Helse Vest,Helse Bergen,25213
-4625,Austevoll,46,Vestland,Helse Vest,Helse Bergen,5283
-4626,Øygarden,46,Vestland,Helse Vest,Helse Bergen,39032
-4627,Askøy,46,Vestland,Helse Vest,Helse Bergen,29816
-4628,Vaksdal,46,Vestland,Helse Vest,Helse Bergen,3867
-4629,Modalen,46,Vestland,Helse Vest,Helse Bergen,378
-4630,Osterøy,46,Vestland,Helse Vest,Helse Bergen,8131
-4631,Alver,46,Vestland,Helse Vest,Helse Bergen,29593
-4632,Austrheim,46,Vestland,Helse Vest,Helse Bergen,2889
-4633,Fedje,46,Vestland,Helse Vest,Helse Bergen,502
-4634,Masfjorden,46,Vestland,Helse Vest,Helse Bergen,1629
-4635,Gulen,46,Vestland,Helse Vest,Helse Førde,2230
-4636,Solund,46,Vestland,Helse Vest,Helse Førde,768
-4637,Hyllestad,46,Vestland,Helse Vest,Helse Førde,1290
-4638,Høyanger,46,Vestland,Helse Vest,Helse Førde,3965
-4639,Vik,46,Vestland,Helse Vest,Helse Førde,2560
-4640,Sogndal,46,Vestland,Helse Vest,Helse Førde,12097
-4641,Aurland,46,Vestland,Helse Vest,Helse Førde,1766
-4642,Lærdal,46,Vestland,Helse Vest,Helse Førde,2117
-4643,Årdal,46,Vestland,Helse Vest,Helse Førde,5204
-4644,Luster,46,Vestland,Helse Vest,Helse Førde,5246
-4645,Askvoll,46,Vestland,Helse Vest,Helse Førde,2951
-4646,Fjaler,46,Vestland,Helse Vest,Helse Førde,2901
-4647,Sunnfjord,46,Vestland,Helse Vest,Helse Førde,22116
-4648,Bremanger,46,Vestland,Helse Vest,Helse Førde,3521
-4649,Stad,46,Vestland,Helse Vest,Helse Førde,9527
-4650,Gloppen,46,Vestland,Helse Vest,Helse Førde,5875
-4651,Stryn,46,Vestland,Helse Vest,Helse Førde,7207
-1505,Kristiansund,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,24013
-1506,Molde,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,32002
-1507,Ålesund,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,67114
-1511,Vanylven,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,3045
-1514,Sande (Møre og Romsdal),15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,2422
-1515,Herøy (Møre og Romsdal),15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,8765
-1516,Ulstein,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,8557
-1517,Hareid,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,5126
-1520,Ørsta,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,10833
-1525,Stranda,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,4467
-1528,Sykkylven,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,7558
-1531,Sula,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,9547
-1532,Giske,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,8597
-1535,Vestnes,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,6936
-1539,Rauma,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,7019
-1547,Aukra,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,3518
-1554,Averøy,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,5828
-1557,Gjemnes,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,2669
-1560,Tingvoll,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,2960
-1563,Sunndal,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,6932
-1566,Surnadal,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,5849
-1573,Smøla,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,2120
-1576,Aure,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,3384
-1577,Volda,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,10809
-1578,Fjord,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,2491
-1579,Hustadvika,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,13287
-5001,Trondheim,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,210496
-5006,Steinkjer,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,24004
-5007,Namsos,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,15001
-5014,Frøya,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,5265
-5020,Osen,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,904
-5021,Oppdal,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,7066
-5022,Rennebu,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,2443
-5025,Røros,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,5572
-5026,Holtålen,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,1953
-5027,Midtre Gauldal,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,6120
-5028,Melhus,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,17123
-5029,Skaun,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,8360
-5031,Malvik,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,14425
-5032,Selbu,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,4090
-5033,Tydal,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,750
-5034,Meråker,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,2399
-5035,Stjørdal,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,24287
-5036,Frosta,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,2608
-5037,Levanger,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,20171
-5038,Verdal,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,14955
-5041,Snåsa,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,2033
-5042,Lierne,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,1309
-5043,Røyrvik,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,441
-5044,Namsskogan,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,818
-5045,Grong,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,2287
-5046,Høylandet,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,1193
-5047,Overhalla,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,3817
-5049,Flatanger,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,1101
-5052,Leka,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,570
-5053,Inderøy,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,6794
-5054,Indre Fosen,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,9899
-5055,Heim,50,Trøndelag,Helse Midt-Norge,Helse Møre og Romsdal,5884
-5056,Hitra,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,5156
-5057,Ørland,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,10371
-5058,Åfjord,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,4252
-5059,Orkland,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,18502
-5060,Nærøysund,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,9732
-5061,Rindal,50,Trøndelag,Helse Midt-Norge,Helse Møre og Romsdal,1980
-1804,Bodø,18,Nordland,Helse Nord,Nordlandssykehuset,52803
-1806,Narvik,18,Nordland,Helse Nord,Universitetssykehuset Nord-Norge,21530
-1811,Bindal,18,Nordland,Helse Midt-Norge,Helgelandssykehuset,1406
-1812,Sømna,18,Nordland,Helse Nord,Helgelandssykehuset,1981
-1813,Brønnøy,18,Nordland,Helse Nord,Helgelandssykehuset,7777
-1815,Vega,18,Nordland,Helse Nord,Helgelandssykehuset,1175
-1816,Vevelstad,18,Nordland,Helse Nord,Helgelandssykehuset,462
-1818,Herøy (Nordland),18,Nordland,Helse Nord,Helgelandssykehuset,1825
-1820,Alstahaug,18,Nordland,Helse Nord,Helgelandssykehuset,7333
-1822,Leirfjord,18,Nordland,Helse Nord,Helgelandssykehuset,2257
-1824,Vefsn,18,Nordland,Helse Nord,Helgelandssykehuset,13233
-1825,Grane,18,Nordland,Helse Nord,Helgelandssykehuset,1461
-1826,Hattfjelldal,18,Nordland,Helse Nord,Helgelandssykehuset,1273
-1827,Dønna,18,Nordland,Helse Nord,Helgelandssykehuset,1369
-1828,Nesna,18,Nordland,Helse Nord,Helgelandssykehuset,1698
-1832,Hemnes,18,Nordland,Helse Nord,Helgelandssykehuset,4420
-1833,Rana,18,Nordland,Helse Nord,Helgelandssykehuset,26092
-1834,Lurøy,18,Nordland,Helse Nord,Helgelandssykehuset,1869
-1835,Træna,18,Nordland,Helse Nord,Helgelandssykehuset,450
-1836,Rødøy,18,Nordland,Helse Nord,Helgelandssykehuset,1153
-1837,Meløy,18,Nordland,Helse Nord,Nordlandssykehuset,6214
-1838,Gildeskål,18,Nordland,Helse Nord,Nordlandssykehuset,1894
-1839,Beiarn,18,Nordland,Helse Nord,Nordlandssykehuset,1012
-1840,Saltdal,18,Nordland,Helse Nord,Nordlandssykehuset,4617
-1841,Fauske,18,Nordland,Helse Nord,Nordlandssykehuset,9603
-1845,Sørfold,18,Nordland,Helse Nord,Nordlandssykehuset,1869
-1848,Steigen,18,Nordland,Helse Nord,Nordlandssykehuset,2591
-1851,Lødingen,18,Nordland,Helse Nord,Universitetssykehuset Nord-Norge,1976
-1853,Evenes,18,Nordland,Helse Nord,Universitetssykehuset Nord-Norge,1334
-1856,Røst,18,Nordland,Helse Nord,Nordlandssykehuset,469
-1857,Værøy,18,Nordland,Helse Nord,Nordlandssykehuset,678
-1859,Flakstad,18,Nordland,Helse Nord,Nordlandssykehuset,1216
-1860,Vestvågøy,18,Nordland,Helse Nord,Nordlandssykehuset,11566
-1865,Vågan,18,Nordland,Helse Nord,Nordlandssykehuset,9724
-1866,Hadsel,18,Nordland,Helse Nord,Nordlandssykehuset,8107
-1867,Bø (Nordland),18,Nordland,Helse Nord,Nordlandssykehuset,2565
-1868,Øksnes,18,Nordland,Helse Nord,Nordlandssykehuset,4458
-1870,Sortland,18,Nordland,Helse Nord,Nordlandssykehuset,10468
-1871,Andøy,18,Nordland,Helse Nord,Nordlandssykehuset,4572
-1874,Moskenes,18,Nordland,Helse Nord,Nordlandssykehuset,982
-1875,Hamarøy,18,Nordland,Helse Nord,Nordlandssykehuset,2708
-5401,Tromsø,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,77544
-5402,Harstad,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,24804
-5403,Alta,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,21144
-5404,Vardø,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,1897
-5405,Vadsø,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,5568
-5406,Hammerfest,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,11274
-5411,Kvæfjord,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,2789
-5412,Tjeldsund,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,4201
-5413,Ibestad,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,1289
-5414,Gratangen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,1070
-5415,Lavangen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,970
-5416,Bardu,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,3993
-5417,Salangen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,2087
-5418,Målselv,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,6599
-5419,Sørreisa,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,3414
-5420,Dyrøy,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,1068
-5421,Senja,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,14738
-5422,Balsfjord,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,5576
-5423,Karlsøy,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,2179
-5424,Lyngen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,2729
-5425,Storfjord,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,1836
-5426,Kåfjord,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,2012
-5427,Skjervøy,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,2804
-5428,Nordreisa,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,4746
-5429,Kvænangen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,1159
-5430,Kautokeino,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,2877
-5432,Loppa,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,859
-5433,Hasvik,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,964
-5434,Måsøy,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,1162
-5435,Nordkapp,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,2947
-5436,Porsanger,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,3904
-5437,Karasjok,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,2584
-5438,Lebesby,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,1221
-5439,Gamvik,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,1057
-5440,Berlevåg,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,906
-5441,Tana,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,2821
-5442,Nesseby,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,854
-5443,Båtsfjord,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,2165
-5444,Sør-Varanger,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,9925
+Kommunenr,Kommunenavn,Fylkenr,Fylkenavn,RHF,HF,Stråleterapienhet,Befolkning2020
+3020,Nordre Follo,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,61032
+3021,Ås,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,20780
+3022,Frogn,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,16084
+3023,Nesodden,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,19939
+3026,Aurskog-Høland,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,17754
+3027,Rælingen,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,19024
+3028,Enebakk,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,11249
+3029,Lørenskog,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,44693
+3030,Lillestrøm,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,89095
+3031,Nittedal,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,24947
+3032,Gjerdrum,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,6989
+3033,Ullensaker,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,41565
+3034,Nes,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,23898
+3035,Eidsvoll,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,26716
+3036,Nannestad,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,15074
+3037,Hurdal,30,Viken,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,2905
+30110,Grorud,3,Oslo,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,27707
+30111,Stovner,3,Oslo,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,33316
+30112,Alna,3,Oslo,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,49801
+3401,Kongsvinger,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,17949
+3414,Nord-Odal,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,5016
+3415,Sør-Odal,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,7978
+3416,Eidskog,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,6032
+3417,Grue,34,Innlandet,Helse Sør-Øst,Akershus Universitetssykehus,Oslo Universitetssykehus,4548
+30105,Frogner,3,Oslo,Helse Sør-Øst,Diakonhjemmet Sykehus,Oslo Universitetssykehus,59269
+30106,Ullern,3,Oslo,Helse Sør-Øst,Diakonhjemmet Sykehus,Oslo Universitetssykehus,34569
+30107,Vestre Aker,3,Oslo,Helse Sør-Øst,Diakonhjemmet Sykehus,Oslo Universitetssykehus,50157
+5403,Alta,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,21144
+5404,Vardø,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,1897
+5405,Vadsø,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,5568
+5406,Hammerfest,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,11274
+5430,Kautokeino,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,2877
+5432,Loppa,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,859
+5433,Hasvik,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,964
+5434,Måsøy,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,1162
+5435,Nordkapp,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,2947
+5436,Porsanger,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,3904
+5437,Karasjok,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,2584
+5438,Lebesby,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,1221
+5439,Gamvik,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,1057
+5440,Berlevåg,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,906
+5441,Tana,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,2821
+5442,Nesseby,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,854
+5443,Båtsfjord,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,2165
+5444,Sør-Varanger,54,Troms og Finnmark,Helse Nord,Finnmarkssykehuset,UNN Tromsø,9925
+1811,Bindal,18,Nordland,Helse Midt-Norge,Helgelandssykehuset,UNN Tromsø,1406
+1812,Sømna,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1981
+1813,Brønnøy,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,7777
+1815,Vega,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1175
+1816,Vevelstad,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,462
+1818,Herøy (Nordland),18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1825
+1820,Alstahaug,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,7333
+1822,Leirfjord,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,2257
+1824,Vefsn,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,13233
+1825,Grane,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1461
+1826,Hattfjelldal,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1273
+1827,Dønna,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1369
+1828,Nesna,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1698
+1832,Hemnes,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,4420
+1833,Rana,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,26092
+1834,Lurøy,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1869
+1835,Træna,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,450
+1836,Rødøy,18,Nordland,Helse Nord,Helgelandssykehuset,UNN Tromsø,1153
+4601,Bergen,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,286930
+4620,Ulvik,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,1051
+4621,Voss,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,15875
+4622,Kvam,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,8497
+4623,Samnanger,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,2501
+4624,Bjørnafjorden,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,25213
+4625,Austevoll,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,5283
+4626,Øygarden,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,39032
+4627,Askøy,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,29816
+4628,Vaksdal,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,3867
+4629,Modalen,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,378
+4630,Osterøy,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,8131
+4631,Alver,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,29593
+4632,Austrheim,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,2889
+4633,Fedje,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,502
+4634,Masfjorden,46,Vestland,Helse Vest,Helse Bergen,Haukeland Universitetssykehus,1629
+1106,Haugesund,11,Rogaland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,37444
+1134,Suldal,11,Rogaland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,3784
+1135,Sauda,11,Rogaland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,4525
+1145,Bokn,11,Rogaland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,855
+1146,Tysvær,11,Rogaland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,11283
+1149,Karmøy,11,Rogaland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,42541
+1151,Utsira,11,Rogaland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,188
+1160,Vindafjord,11,Rogaland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,8775
+4611,Etne,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,4043
+4612,Sveio,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,5775
+4613,Bømlo,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,12061
+4614,Stord,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,18919
+4615,Fitjar,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,3117
+4616,Tysnes,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,2883
+4617,Kvinnherad,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,13017
+4618,Ullensvang,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,10881
+4619,Eidfjord,46,Vestland,Helse Vest,Helse Fonna,Haukeland Universitetssykehus,937
+4602,Kinn,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,17131
+4635,Gulen,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,2230
+4636,Solund,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,768
+4637,Hyllestad,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,1290
+4638,Høyanger,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,3965
+4639,Vik,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,2560
+4640,Sogndal,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,12097
+4641,Aurland,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,1766
+4642,Lærdal,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,2117
+4643,Årdal,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,5204
+4644,Luster,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,5246
+4645,Askvoll,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,2951
+4646,Fjaler,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,2901
+4647,Sunnfjord,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,22116
+4648,Bremanger,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,3521
+4649,Stad,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,9527
+4650,Gloppen,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,5875
+4651,Stryn,46,Vestland,Helse Vest,Helse Førde,Haukeland Universitetssykehus,7207
+1505,Kristiansund,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,24013
+1506,Molde,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,32002
+1507,Ålesund,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,67114
+1511,Vanylven,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,3045
+1514,Sande (Møre og Romsdal),15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,2422
+1515,Herøy (Møre og Romsdal),15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,8765
+1516,Ulstein,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,8557
+1517,Hareid,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,5126
+1520,Ørsta,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,10833
+1525,Stranda,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,4467
+1528,Sykkylven,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,7558
+1531,Sula,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,9547
+1532,Giske,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,8597
+1535,Vestnes,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,6936
+1539,Rauma,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,7019
+1547,Aukra,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,3518
+1554,Averøy,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,5828
+1557,Gjemnes,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,2669
+1560,Tingvoll,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,2960
+1563,Sunndal,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,6932
+1566,Surnadal,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,5849
+1573,Smøla,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,2120
+1576,Aure,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,3384
+1577,Volda,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,10809
+1578,Fjord,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,2491
+1579,Hustadvika,15,Møre og Romsdal,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,13287
+5055,Heim,50,Trøndelag,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,5884
+5061,Rindal,50,Trøndelag,Helse Midt-Norge,Helse Møre og Romsdal,Ålesund Sjukehus,1980
+5006,Steinkjer,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,24004
+5007,Namsos,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,15001
+5020,Osen,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,904
+5032,Selbu,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,4090
+5033,Tydal,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,750
+5034,Meråker,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,2399
+5035,Stjørdal,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,24287
+5036,Frosta,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,2608
+5037,Levanger,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,20171
+5038,Verdal,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,14955
+5041,Snåsa,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,2033
+5042,Lierne,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,1309
+5043,Røyrvik,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,441
+5044,Namsskogan,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,818
+5045,Grong,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,2287
+5046,Høylandet,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,1193
+5047,Overhalla,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,3817
+5049,Flatanger,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,1101
+5052,Leka,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,570
+5053,Inderøy,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,6794
+5060,Nærøysund,50,Trøndelag,Helse Midt-Norge,Helse Nord-Trøndelag,St Olavs Hospital,9732
+1101,Eigersund,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,14860
+1103,Stavanger,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,144699
+1108,Sandnes,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,81305
+1111,Sokndal,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,3281
+1112,Lund,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,3178
+1114,Bjerkreim,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,2789
+1119,Hå,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,19296
+1120,Klepp,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,20163
+1121,Time,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,19353
+1122,Gjesdal,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,12131
+1124,Sola,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,27568
+1127,Randaberg,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,11454
+1130,Strand,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,13268
+1133,Hjelmeland,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,2534
+1144,Kvitsøy,11,Rogaland,Helse Vest,Helse Stavanger,Stavanger Universitetssykehus,523
+30101,Gamle Oslo,3,Oslo,Helse Sør-Øst,Lovisenberg Diakonale Sykehus,Oslo Universitetssykehus,58671
+30102,Grünerløkka,3,Oslo,Helse Sør-Øst,Lovisenberg Diakonale Sykehus,Oslo Universitetssykehus,62423
+30104,St. Hanshaugen,3,Oslo,Helse Sør-Øst,Lovisenberg Diakonale Sykehus,Oslo Universitetssykehus,38945
+30116,Sentrum,3,Oslo,Helse Sør-Øst,Lovisenberg Diakonale Sykehus,Oslo Universitetssykehus,1471
+1804,Bodø,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,52803
+1837,Meløy,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,6214
+1838,Gildeskål,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,1894
+1839,Beiarn,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,1012
+1840,Saltdal,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,4617
+1841,Fauske,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,9603
+1845,Sørfold,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,1869
+1848,Steigen,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,2591
+1856,Røst,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,469
+1857,Værøy,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,678
+1859,Flakstad,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,1216
+1860,Vestvågøy,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,11566
+1865,Vågan,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,9724
+1866,Hadsel,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,8107
+1867,Bø (Nordland),18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,2565
+1868,Øksnes,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,4458
+1870,Sortland,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,10468
+1871,Andøy,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,4572
+1874,Moskenes,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,982
+1875,Hamarøy,18,Nordland,Helse Nord,Nordlandssykehuset,Nordlandssykehuset Bodø,2708
+301,Oslo kommune,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,Oslo Universitetssykehus,699827
+30103,Sagene,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,Oslo Universitetssykehus,45089
+30108,Nordre Aker,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,Oslo Universitetssykehus,52327
+30109,Bjerke,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,Oslo Universitetssykehus,33422
+30113,Østensjø,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,Oslo Universitetssykehus,50806
+30114,Nordstrand,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,Oslo Universitetssykehus,52459
+30115,Søndre Nordstrand,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,Oslo Universitetssykehus,39066
+30117,Marka,3,Oslo,Helse Sør-Øst,Oslo Universitetssykehus,Oslo Universitetssykehus,1610
+5001,Trondheim,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,210496
+5014,Frøya,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,5265
+5021,Oppdal,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,7066
+5022,Rennebu,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,2443
+5025,Røros,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,5572
+5026,Holtålen,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,1953
+5027,Midtre Gauldal,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,6120
+5028,Melhus,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,17123
+5029,Skaun,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,8360
+5031,Malvik,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,14425
+5054,Indre Fosen,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,9899
+5056,Hitra,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,5156
+5057,Ørland,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,10371
+5058,Åfjord,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,4252
+5059,Orkland,50,Trøndelag,Helse Midt-Norge,St Olavs Hospital,St Olavs Hospital,18502
+3806,Porsgrunn,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,36624
+3807,Skien,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,55513
+3808,Notodden,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,13029
+3812,Siljan,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,2349
+3813,Bamble,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,14056
+3814,Kragerø,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,10351
+3815,Drangedal,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,4093
+3816,Nome,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,6494
+3817,Midt-Telemark,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,10539
+3818,Tinn,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,5512
+3819,Hjartdal,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,1562
+3820,Seljord,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,2889
+3821,Kviteseid,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,2452
+3822,Nissedal,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,1414
+3823,Fyresdal,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,1198
+3824,Tokke,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,2140
+3825,Vinje,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Telemark,Oslo Universitetssykehus,3755
+3801,Horten,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,27502
+3802,Holmestrand (tidl. Holmestrand),38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,25681
+3803,Tønsberg,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,57794
+3804,Sandefjord,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,64943
+3805,Larvik,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,47777
+3811,Færder,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,27165
+3054,Lunner,30,Viken,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,9144
+3403,Hamar,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,31999
+3405,Lillehammer,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,28425
+3407,Gjøvik,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,30267
+3411,Ringsaker,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,35073
+3412,Løten,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,7715
+3413,Stange,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,21156
+3418,Åsnes,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,7211
+3419,Våler (Innlandet),34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,3597
+3420,Elverum,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,21435
+3421,Trysil,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,6603
+3422,Åmot,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,4195
+3423,Stor-Elvdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,2318
+3424,Rendalen,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1722
+3425,Engerdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1253
+3426,Tolga,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1551
+3427,Tynset,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,5581
+3428,Alvdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,2445
+3429,Folldal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1530
+3430,Os,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1855
+3431,Dovre,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,2498
+3432,Lesja,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1986
+3433,Skjåk,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,2151
+3434,Lom,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,2211
+3435,Vågå,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,3591
+3436,Nord-Fron,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,5628
+3437,Sel,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,5531
+3438,Sør-Fron,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,3064
+3439,Ringebu,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,4385
+3440,Øyer,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,5082
+3441,Gausdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,6079
+3442,Østre Toten,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,14827
+3443,Vestre Toten,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,13572
+3446,Gran,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,13633
+3447,Søndre Land,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,5535
+3448,Nordre Land,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,6577
+3449,Sør-Aurdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,2889
+3450,Etnedal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1256
+3451,Nord-Aurdal,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,6354
+3452,Vestre Slidre,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,2111
+3453,Øystre Slidre,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,3252
+3454,Vang,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1587
+3001,Halden,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,31444
+3002,Moss,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,50290
+3003,Sarpsborg,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,58182
+3004,Fredrikstad,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,83892
+3011,Hvaler,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,4741
+3012,Aremark,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,1315
+3013,Marker,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,3578
+3014,Indre Østfold,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,45608
+3015,Skiptvet,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,3846
+3016,Rakkestad,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,8312
+3017,Råde,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,7633
+3018,Våler (Viken),30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,5913
+3019,Vestby,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,18699
+4201,Risør,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,6735
+4202,Grimstad,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,24017
+4203,Arendal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,45509
+4204,Kristiansand,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,113737
+4205,Lindesnes,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,23147
+4206,Farsund,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,9622
+4207,Flekkefjord,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,9048
+4211,Gjerstad,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,2427
+4212,Vegårshei,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,2131
+4213,Tvedestrand,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,6115
+4214,Froland,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,6098
+4215,Lillesand,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,11279
+4216,Birkenes,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,5342
+4217,Åmli,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,1801
+4218,Iveland,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,1323
+4219,Evje og Hornnes,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,3653
+4220,Bygland,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,1134
+4221,Valle,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,1169
+4222,Bykle,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,935
+4223,Vennesla,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,15123
+4224,Åseral,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,912
+4225,Lyngdal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,10480
+4226,Hægebostad,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,1704
+4227,Kvinesdal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,5883
+4228,Sirdal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,1810
+1806,Narvik,18,Nordland,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,21530
+1851,Lødingen,18,Nordland,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,1976
+1853,Evenes,18,Nordland,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,1334
+5401,Tromsø,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,77544
+5402,Harstad,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,24804
+5411,Kvæfjord,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,2789
+5412,Tjeldsund,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,4201
+5413,Ibestad,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,1289
+5414,Gratangen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,1070
+5415,Lavangen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,970
+5416,Bardu,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,3993
+5417,Salangen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,2087
+5418,Målselv,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,6599
+5419,Sørreisa,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,3414
+5420,Dyrøy,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,1068
+5421,Senja,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,14738
+5422,Balsfjord,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,5576
+5423,Karlsøy,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,2179
+5424,Lyngen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,2729
+5425,Storfjord,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,1836
+5426,Kåfjord,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,2012
+5427,Skjervøy,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,2804
+5428,Nordreisa,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,4746
+5429,Kvænangen,54,Troms og Finnmark,Helse Nord,Universitetssykehuset Nord-Norge,UNN Tromsø,1159
+3005,Drammen,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,102273
+3006,Kongsberg,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,27879
+3007,Ringerike,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,31011
+3024,Bærum,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,128982
+3025,Asker,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,96088
+3038,Hole,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,6859
+3039,Flå,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,1057
+3040,Nesbyen,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,3273
+3041,Gol,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,4667
+3042,Hemsedal,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,2611
+3043,Ål,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,4650
+3044,Hol,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,4504
+3045,Sigdal,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,3492
+3046,Krødsherad,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,2189
+3047,Modum,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,14273
+3048,Øvre Eiker,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,20044
+3049,Lier,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,27584
+3050,Flesberg,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,2720
+3051,Rollag,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,1370
+3052,Nore og Uvdal,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,2455
+3053,Jevnaker,30,Viken,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,6908
+3802,Holmestrand (tidl. Sande),38,Vestfold og Telemark,Helse Sør-Øst,Vestre Viken Helseforetak,Oslo Universitetssykehus,25681
