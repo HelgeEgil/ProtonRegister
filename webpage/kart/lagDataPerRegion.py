@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
+
 def get_RHF(HF):
     RHF = df_folketall[df_folketall["HF"] == HF]["RHF"].values[0]
     return RHF
@@ -79,7 +80,6 @@ for k, v in menn_kreftformer.items():
 df_folketall["RHFnummer"] = df_folketall["RHF"].map(enum_RHF)
 df_folketall["HFnummer"] = df_folketall["HF"].map(enum_HF)
 df_folketall["enhet_nummer"] = df_folketall["Stråleterapienhet"].map(enum_enhet)
-
 df_folketall["Bias D10"] = np.random.uniform(-5, 5, size=len(df_folketall))
 
 krefttype = "Mann Prostata"
@@ -93,9 +93,10 @@ bias_D10 = {k: 8 * random.random() - 5 for k in unique_HF}
 mean_D10 = 20
 std_D10 = 5
 
-hf_kommuner = { hf: list(df_folketall.query(f'HF == "{hf}"')["Kommunenavn"]) for hf in hf_list }
+# Lag heller en ny dataframe med Alle data
+hf_kommuner = {hf: list(df_folketall.query(f'HF == "{hf}"')["Kommunenavn"]) for hf in hf_list}
 
-X = {hf: np.zeros((0)) for hf in hf_list }
+X = {hf: np.zeros((0)) for hf in hf_list}
 
 for hf, kommuner in hf_kommuner.items():
     for k in kommuner:
@@ -104,10 +105,13 @@ for hf, kommuner in hf_kommuner.items():
         n = int(dff[krefttype].sum())
         X[hf] = np.concatenate((X[hf], np.random.normal(mean_D10 + bias, std_D10, n)))
 
-hf_n = { hf: len(X[hf]) for hf in hf_list }
+hf_n = {hf: len(X[hf]) for hf in hf_list}
+
 
 for hf, Xi in X.items():
     fig = plt.hist(Xi, bins=50, alpha=0.6, label=f"{hf} (N={hf_n[hf]})")
+
+
 plt.title(f"Blæredose for {krefttype}")
 plt.axvline(x=mean_D10, color="red", linestyle="--", label="Landsgjennomsnitt")
 plt.xlabel("D10% til blære [Gy]")

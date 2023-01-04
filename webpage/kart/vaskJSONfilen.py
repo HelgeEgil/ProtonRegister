@@ -20,11 +20,14 @@ with open('norskeKommuner.json', 'r') as f:
         enhet = dff["Stråleterapienhet"].values[0]
         HF = dff["HF"].values[0]
         RHF = dff["RHF"].values[0]
+        bergenoslo = RHF in ("Helse Sør-Øst", "Helse Midt-Norge") and 1 or 0
+
         fylkenr = dff["Fylkenr"].values[0]
         feature['properties']['enhet'] = int(enum_enheter[enhet])
         feature['properties']['HF'] = int(enum_HF[HF])
         feature['properties']['RHF'] = int(enum_RHF[RHF])
         feature['properties']['fylke'] = int(fylkenr)
+        feature['properties']['bergenoslo'] = int(bergenoslo)
 
-with open('norskeKommunerMedHelseinfoSomTall.json', 'w') as f:
+with open('norskeKommunerMedHelseinfoSomTallMedBergenOslo.json', 'w') as f:
     json.dump(data, f)

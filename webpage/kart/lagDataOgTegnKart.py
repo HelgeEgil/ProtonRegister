@@ -102,7 +102,7 @@ kart_HF = json.load(kart_HF_file)
 kart_RHF_file = open("norskeKommunerBareRHF.json")
 kart_RHF = json.load(kart_RHF_file)
 
-switch = "kommune"
+switch = "enhet"
 
 kart = {"RHF": kart_RHF, "HF": kart_HF, "enhet": kart_enheter, "fylke": kart_fylker, "kommune": kart_kommuner}
 kolonnenavn = {"RHF": "RHFnummer", "HF": "HFnummer", "enhet": "enhet_nummer", "fylke": "Fylkenr", "kommune": "Kommunenr"}
@@ -147,6 +147,8 @@ elif switch == "fylke":
 
 
 dff = df_folketall.groupby(kolonnenavn[switch]).sum()
+
+print(dff)
 
 fig = go.Figure(go.Choroplethmapbox(geojson=kart[switch],
                                     locations=dff.index,
