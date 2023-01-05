@@ -54,7 +54,7 @@ def get_hovertemplate_customdata(switch, df_folketall, krefttype):
     hovertemplate = f"<i>Tilfeller {krefttype}</i><br>"
 
     if switch == "kommune":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum()
+        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
         customdata = np.stack(([get_kommune_from_nr(k) for k in dff.index], dff[krefttype], [get_fylke_from_kommunenr(k) for k in dff.index],
                                [get_HF_from_kommunenr(k) for k in dff.index],
                                [get_RHF_from_kommunenr(k) for k in dff.index],
@@ -64,38 +64,37 @@ def get_hovertemplate_customdata(switch, df_folketall, krefttype):
         hovertemplate += "<b>Krefttilfeller:</b> %{customdata[1]:.0f}<br><extra></extra>"
 
     elif switch == "HF":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum()
+        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
         customdata = np.stack((dff[krefttype], [unique_HF[k] for k in dff.index], [get_RHF(unique_HF[k]) for k in dff.index]), axis=-1)
         hovertemplate += "<b>Helseforetak:</b> %{customdata[1]}<br>"
         hovertemplate += "<b>Regionalt helseforetak:</b> %{customdata[2]}<br>"
         hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
 
     elif switch == "RHF":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum()
+        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
         customdata = np.stack((dff[krefttype], [unique_RHF[k] for k in dff.index]), axis=-1)
         hovertemplate += "<b>Regionalt helseforetak:</b> %{customdata[1]}<br>"
         hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
 
     elif switch == "bergenoslo":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum()
+        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
         customdata = np.stack((dff[krefttype], [unique_BO[k] for k in dff.index]), axis=-1)
         hovertemplate += "<b>Behandlende senter:</b> %{customdata[1]}<br>"
         hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
 
     elif switch == "enhet":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum()
+        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
         customdata = np.stack((dff[krefttype], [unique_enhet[k] for k in dff.index]), axis=-1)
         hovertemplate += "<b>Stråleterapienhet:</b> %{customdata[1]}<br>"
         hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
 
     elif switch == "fylke":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum()
+        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
         customdata = np.stack((dff[krefttype], [fylkenavn[k] for k in dff.index]), axis=-1)
         hovertemplate += "<b>Fylke:</b> %{customdata[1]}<br>"
         hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
 
     return hovertemplate, customdata
-
 
 def get_highlights(selections, geojson, district_lookup):
     geojson_highlights = dict()
@@ -106,8 +105,10 @@ def get_highlights(selections, geojson, district_lookup):
             geojson_highlights[k] = [district_lookup[selection] for selection in selections]
     return geojson_highlights
 
-
 selection = set()
+last_mapType = None
+last_sex = None
+last_krefttype = None
 
 kvinner_kreftformer = {'Bryst': 0.222,
                        'Lunge, luftrør': 0.101,
@@ -251,13 +252,23 @@ def krefttype_options(sex_value):
     return options, value
 
 
-@app.callback(Output("map", "figure"), [Input("sex", "value"), Input("krefttype", "value"), Input("mapType", "value")])
-def display_choropleth(sex, krefttype, mapType):
+@app.callback(Output("map", "figure"), [Input("sex", "value"), Input("krefttype", "value"), Input("mapType", "value"), Input("map", "clickData")])
+def display_choropleth(sex, krefttype, mapType, clickData):
     sex_krefttype = f"{sex} {krefttype}"
     hovertemplate, customdata = get_hovertemplate_customdata(mapType, df_folketall, sex_krefttype)
     district_lookup = {feature['properties'][json_navn[mapType]]: feature for feature in kart[mapType]['features']}
 
-    dff = df_folketall.groupby(kolonnenavn[mapType]).sum()
+    dff = df_folketall.groupby(kolonnenavn[mapType]).sum(numeric_only=True)
+
+    zmax = dff[sex_krefttype].max(numeric_only=True)
+
+    #for selected in selection:
+    #    dff.at[selected, sex_krefttype] = 1e6
+
+    dff["opacity"] = 0.4
+    for selected in selection:
+        dff.at[selected, "opacity"] = 1
+    
 
     fig = go.Figure(go.Choroplethmapbox(geojson=kart[mapType],
                                         locations=dff.index,
@@ -266,7 +277,10 @@ def display_choropleth(sex, krefttype, mapType):
                                         colorscale='Viridis',
                                         customdata=customdata,
                                         hovertemplate=hovertemplate,
-                                        colorbar=colorbar(1, 10000, 5)
+                                        colorbar=colorbar(1, 10000, 5),
+                                        zmax=np.log10(zmax),
+                                        zmin=np.log10(1),
+                                        marker={"opacity": dff["opacity"]}
                                         ))
 
     fig.update_layout(mapbox_style="open-street-map",
@@ -280,7 +294,16 @@ def display_choropleth(sex, krefttype, mapType):
               [Input("mapType", "value"), Input("sex", "value"), Input("krefttype", "value"),
                Input("doseparameter", "value"), Input("strukturer", "value"), Input("map", "clickData")])
 def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
+    global last_sex
+    global last_krefttype
+    global last_mapType
+
     sex_krefttype = f"{sex} {krefttype}"
+
+    # Reset clicks dersom ny mapType / sex / krefttype er valgt
+    if (last_sex != sex) or (last_krefttype != krefttype) or (last_mapType != mapType):
+        selection.clear()
+        clickData = None
 
     # Dose RNG parameters, fix to set a bit more logically based on Dxx and structure
 
@@ -301,7 +324,7 @@ def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
             dff = df_folketall.query(f'Kommunenavn == "{navn}"')
 
             bias = dff["Bias D10"].values[0]
-            n = int(dff[sex_krefttype].sum())
+            n = int(dff[sex_krefttype].sum(numeric_only=True))
             dict_pasient['kommune'] += [navn] * n
             dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
 
@@ -315,7 +338,7 @@ def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
                 dff = df_folketall.query(f'Kommunenavn == "{k}"')
 
                 bias = dff["Bias D10"].values[0]
-                n = int(dff[sex_krefttype].sum())
+                n = int(dff[sex_krefttype].sum(numeric_only=True))
                 dict_pasient['kommune'] += [k] * n
                 dict_pasient['HF'] += [hf] * n
                 dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
@@ -330,7 +353,7 @@ def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
                 dff = df_folketall.query(f'Kommunenavn == "{k}"')
 
                 bias = dff["Bias D10"].values[0]
-                n = int(dff[sex_krefttype].sum())
+                n = int(dff[sex_krefttype].sum(numeric_only=True))
                 dict_pasient['kommune'] += [k] * n
                 dict_pasient['RHF'] += [thisUnit] * n
                 dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
@@ -345,14 +368,13 @@ def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
                 dff = df_folketall.query(f'Kommunenavn == "{k}"')
 
                 bias = dff["Bias D10"].values[0]
-                n = int(dff[sex_krefttype].sum())
+                n = int(dff[sex_krefttype].sum(numeric_only=True))
                 dict_pasient['kommune'] += [k] * n
                 dict_pasient['enhet'] += [thisUnit] * n
                 dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
 
     elif mapType == "bergenoslo":
-        selection_list = [unique_BO[k] for k in list(selection)]
-        selection_kommuner = {thisUnit: list(df_folketall.query(f'bergenoslo == "{thisUnit}"')["Kommunenavn"]) for thisUnit in list(selection)}
+        selection_kommuner = {thisUnit: list(df_folketall.query(f'bergenoslo == {thisUnit}')["Kommunenavn"]) for thisUnit in list(selection)}
         dict_pasient = {'kommune': list(), 'bergenoslo': list(), 'Dose': list()}
 
         for thisUnit, kommuner in selection_kommuner.items():
@@ -361,10 +383,25 @@ def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
                 thisName = thisUnit == 0 and "Bergen" or "Oslo"
 
                 bias = dff["Bias D10"].values[0]
-                n = int(dff[sex_krefttype].sum())
+                n = int(dff[sex_krefttype].sum(numeric_only=True))
                 dict_pasient['kommune'] += [k] * n
                 dict_pasient['bergenoslo'] += [thisName] * n
                 dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
+
+    elif mapType == "fylke":
+        selection_list = [fylkenavn[k] for k in list(selection)]
+        selection_kommuner = {thisUnit: list(df_folketall.query(f'Fylkenavn == "{thisUnit}"')["Kommunenavn"]) for thisUnit in selection_list}
+        dict_pasient = {'kommune': list(), 'fylke': list(), 'Dose': list()}
+
+        for thisUnit, kommuner in selection_kommuner.items():
+            for k in kommuner:
+                dff = df_folketall.query(f'Kommunenavn == "{k}"')
+                bias = dff["Bias D10"].values[0]
+                n = int(dff[sex_krefttype].sum(numeric_only=True))
+                dict_pasient['kommune'] += [k] * n
+                dict_pasient['fylke'] += [thisUnit] * n
+                dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
+
 
     df_pasient = pd.DataFrame(dict_pasient)
 
@@ -372,21 +409,10 @@ def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
 
     fig.update_layout(yaxis_title="Antall pasienter", xaxis_title=f"{doseparameter} [Gy]")
 
+    last_krefttype = krefttype
+    last_sex = sex
+    last_mapType = mapType
+
     return fig
 
-
-"""
-@app.callback(Output("selection_result", "value"), [Input("map", "clickData")])
-def store_data(clickData):
-    if clickData is None:
-        return ""
-    else:
-        location = clickData['points'][0]['location']
-
-        if location not in selection:
-            selection.add(location)
-        else:
-            selection.remove(location)
-
-"""
 app.run_server(debug=True)

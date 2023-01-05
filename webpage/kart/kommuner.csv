@@ -247,7 +247,7 @@ Kommunenr,Kommunenavn,Fylkenr,Fylkenavn,RHF,HF,Stråleterapienhet,Befolkning2020
 3804,Sandefjord,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,64943
 3805,Larvik,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,47777
 3811,Færder,38,Vestfold og Telemark,Helse Sør-Øst,Sykehuset i Vestfold,Oslo Universitetssykehus,27165
-3054,Lunner,30,Viken,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,9144
+3054,Lunner,30,Viken,Helse Sør-Øst,Sykehuset Innlandet,Oslo Universitetssykehus,9144
 3403,Hamar,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,31999
 3405,Lillehammer,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,28425
 3407,Gjøvik,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,30267
@@ -289,19 +289,19 @@ Kommunenr,Kommunenavn,Fylkenr,Fylkenavn,RHF,HF,Stråleterapienhet,Befolkning2020
 3452,Vestre Slidre,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,2111
 3453,Øystre Slidre,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,3252
 3454,Vang,34,Innlandet,Helse Sør-Øst,Sykehuset Innlandet,Sykehuset i Gjøvik,1587
-3001,Halden,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,31444
-3002,Moss,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,50290
-3003,Sarpsborg,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,58182
-3004,Fredrikstad,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,83892
-3011,Hvaler,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,4741
-3012,Aremark,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,1315
-3013,Marker,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,3578
-3014,Indre Østfold,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,45608
-3015,Skiptvet,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,3846
-3016,Rakkestad,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,8312
-3017,Råde,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,7633
-3018,Våler (Viken),30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,5913
-3019,Vestby,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Sykehuset i Gjøvik,18699
+3001,Halden,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,31444
+3002,Moss,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,50290
+3003,Sarpsborg,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,58182
+3004,Fredrikstad,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,83892
+3011,Hvaler,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,4741
+3012,Aremark,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,1315
+3013,Marker,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,3578
+3014,Indre Østfold,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,45608
+3015,Skiptvet,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,3846
+3016,Rakkestad,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,8312
+3017,Råde,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,7633
+3018,Våler (Viken),30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,5913
+3019,Vestby,30,Viken,Helse Sør-Øst,Sykehuset Østfold,Oslo Universitetssykehus,18699
 4201,Risør,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,6735
 4202,Grimstad,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,24017
 4203,Arendal,42,Agder,Helse Sør-Øst,Sørlandet Sykehus,Sørlandet Sykehus,45509
