@@ -9,6 +9,10 @@ import dash_bootstrap_components as dbc
 import random
 
 
+def connection():
+    conn = pyodbc.connect("Driver={SQL Server};SERVER={PC163196\SQLEXPRESS};database=testregister;")
+    return conn
+
 def colorbar(zmin, zmax, n=6):
     return dict(
         title="Krefttilfeller",
@@ -50,11 +54,25 @@ def get_bergenoslo_from_number(nr):
         return "Oslo"
 
 
-def get_hovertemplate_customdata(switch, df_folketall, krefttype):
-    hovertemplate = f"<i>Tilfeller {krefttype}</i><br>"
+def get_hovertemplate_customdata(mapType, df_folketall, krefttype):
+    dff = df_folketall.groupby(kolonnenr[mapType]).sum(numeric_only=True)
 
+    if mapType == "kommune":
+        ## Finn en smart måte å legge til annen info her om nødvendig
+        customdata = np.stack((dff[krefttype], [get_kommune_from_nr(k) for k in dff.index]), axis=-1) # Denne kan også pakkes inn i unique?
+    else:
+        customdata = np.stack((dff[krefttype], [unique[mapType][k] for k in dff.index]), axis=-1)
+
+    hovertemplate = f"<i>Tilfeller av {krefttype}</i><br>" + \
+                    f"<b>{mapType}</b>:" + " %{customdata[1]}<br>" + \
+                    "<b>Krefttilfeller</b>: %{customdata[0]:.0f}</br>" + \
+                    "<extra></extra>"
+
+    return hovertemplate, customdata
+
+    """
     if switch == "kommune":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
+        dff = df_folketall.groupby(kolonnenr[switch]).sum(numeric_only=True)
         customdata = np.stack(([get_kommune_from_nr(k) for k in dff.index], dff[krefttype], [get_fylke_from_kommunenr(k) for k in dff.index],
                                [get_HF_from_kommunenr(k) for k in dff.index],
                                [get_RHF_from_kommunenr(k) for k in dff.index],
@@ -62,48 +80,7 @@ def get_hovertemplate_customdata(switch, df_folketall, krefttype):
         hovertemplate += "<b>Fylke:</b>: %{customdata[2]}<br><b>Kommune:</b> %{customdata[0]}<br><b>Helseforetak:</b> %{customdata[3]}<br>"
         hovertemplate += "<b>Regionalt helseforetak:</b> %{customdata[4]}<br><b>Stråleterapienhet:</b> %{customdata[5]}<br>"
         hovertemplate += "<b>Krefttilfeller:</b> %{customdata[1]:.0f}<br><extra></extra>"
-
-    elif switch == "HF":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
-        customdata = np.stack((dff[krefttype], [unique_HF[k] for k in dff.index], [get_RHF(unique_HF[k]) for k in dff.index]), axis=-1)
-        hovertemplate += "<b>Helseforetak:</b> %{customdata[1]}<br>"
-        hovertemplate += "<b>Regionalt helseforetak:</b> %{customdata[2]}<br>"
-        hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
-
-    elif switch == "RHF":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
-        customdata = np.stack((dff[krefttype], [unique_RHF[k] for k in dff.index]), axis=-1)
-        hovertemplate += "<b>Regionalt helseforetak:</b> %{customdata[1]}<br>"
-        hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
-
-    elif switch == "bergenoslo":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
-        customdata = np.stack((dff[krefttype], [unique_BO[k] for k in dff.index]), axis=-1)
-        hovertemplate += "<b>Behandlende senter:</b> %{customdata[1]}<br>"
-        hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
-
-    elif switch == "enhet":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
-        customdata = np.stack((dff[krefttype], [unique_enhet[k] for k in dff.index]), axis=-1)
-        hovertemplate += "<b>Stråleterapienhet:</b> %{customdata[1]}<br>"
-        hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
-
-    elif switch == "fylke":
-        dff = df_folketall.groupby(kolonnenavn[switch]).sum(numeric_only=True)
-        customdata = np.stack((dff[krefttype], [fylkenavn[k] for k in dff.index]), axis=-1)
-        hovertemplate += "<b>Fylke:</b> %{customdata[1]}<br>"
-        hovertemplate += "<b>Krefttilfeller:</b> %{customdata[0]:.0f}<br><extra></extra>"
-
-    return hovertemplate, customdata
-
-def get_highlights(selections, geojson, district_lookup):
-    geojson_highlights = dict()
-    for k in geojson.keys():
-        if k != 'features':
-            geojson_highlights[k] = geojson[k]
-        else:
-            geojson_highlights[k] = [district_lookup[selection] for selection in selections]
-    return geojson_highlights
+    """
 
 selection = set()
 last_mapType = None
@@ -142,6 +119,8 @@ unique_enhet = sorted(df_folketall["Stråleterapienhet"].unique())
 unique_HF = sorted(df_folketall["HF"].unique())
 unique_RHF = sorted(df_folketall["RHF"].unique())
 unique_BO = ["Bergen", "Oslo"]
+unique = {"HF": unique_HF, "RHF": unique_RHF, "enhet": unique_enhet, "bergenoslo": unique_BO, "fylke": fylkenavn}
+
 
 enum_enhet = {v: k for k, v in enumerate(unique_enhet)}
 enum_HF = {v: k for k, v in enumerate(unique_HF)}
@@ -160,9 +139,12 @@ df_folketall["RHFnummer"] = df_folketall["RHF"].map(enum_RHF)
 df_folketall["HFnummer"] = df_folketall["HF"].map(enum_HF)
 df_folketall["enhet_nummer"] = df_folketall["Stråleterapienhet"].map(enum_enhet)
 df_folketall["Bias D10"] = np.random.uniform(-5, 5, size=len(df_folketall))
-df_folketall["bergenoslo"] = 1
-df_folketall.loc[df_folketall.RHF == "Helse Vest", "bergenoslo"] = 0
-df_folketall.loc[df_folketall.RHF == "Helse Nord", "bergenoslo"] = 0
+df_folketall["bergenoslo"] = "Oslo"
+df_folketall["bergenoslonr"] = 1
+df_folketall.loc[df_folketall.RHF == "Helse Vest", "bergenoslo"] = "Bergen"
+df_folketall.loc[df_folketall.RHF == "Helse Nord", "bergenoslo"] = "Bergen"
+df_folketall.loc[df_folketall.RHF == "Helse Vest", "bergenoslonr"] = 0
+df_folketall.loc[df_folketall.RHF == "Helse Nord", "bergenoslonr"] = 0
 
 kart_kommuner_file = open("norskeKommunerMedHelseinfoSomTall.json")
 kart_kommuner = json.load(kart_kommuner_file)
@@ -180,7 +162,8 @@ kart_BO = json.load(kart_BO_file)
 switch = "HF"
 
 kart = {"RHF": kart_RHF, "HF": kart_HF, "enhet": kart_enheter, "fylke": kart_fylker, "kommune": kart_kommuner, "bergenoslo": kart_BO}
-kolonnenavn = {"RHF": "RHFnummer", "HF": "HFnummer", "enhet": "enhet_nummer", "fylke": "Fylkenr", "kommune": "Kommunenr", "bergenoslo": "bergenoslo"}
+kolonnenr = {"RHF": "RHFnummer", "HF": "HFnummer", "enhet": "enhet_nummer", "fylke": "Fylkenr", "kommune": "Kommunenr", "bergenoslo": "bergenoslonr"}
+kolonnenavn = {"RHF": "RHF", "HF": "HF", "enhet": "Stråleterapienhet", "fylke": "Fylkenavn", "kommune": "Kommune", "bergenoslo": "bergenoslo"}
 json_navn = {"RHF": "RHF", "HF": "HF", "enhet": "enhet", "fylke": "fylke", "kommune": "kommunenummer", "bergenoslo": "bergenoslo"}
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -256,14 +239,7 @@ def krefttype_options(sex_value):
 def display_choropleth(sex, krefttype, mapType, clickData):
     sex_krefttype = f"{sex} {krefttype}"
     hovertemplate, customdata = get_hovertemplate_customdata(mapType, df_folketall, sex_krefttype)
-    district_lookup = {feature['properties'][json_navn[mapType]]: feature for feature in kart[mapType]['features']}
-
-    dff = df_folketall.groupby(kolonnenavn[mapType]).sum(numeric_only=True)
-
-    zmax = dff[sex_krefttype].max(numeric_only=True)
-
-    #for selected in selection:
-    #    dff.at[selected, sex_krefttype] = 1e6
+    dff = df_folketall.groupby(kolonnenr[mapType]).sum(numeric_only=True)
 
     dff["opacity"] = 0.4
     for selected in selection:
@@ -278,8 +254,6 @@ def display_choropleth(sex, krefttype, mapType, clickData):
                                         customdata=customdata,
                                         hovertemplate=hovertemplate,
                                         colorbar=colorbar(1, 10000, 5),
-                                        zmax=np.log10(zmax),
-                                        zmin=np.log10(1),
                                         marker={"opacity": dff["opacity"]}
                                         ))
 
@@ -305,8 +279,6 @@ def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
         selection.clear()
         clickData = None
 
-    # Dose RNG parameters, fix to set a bit more logically based on Dxx and structure
-
     mean_D10 = 20
     std_D10 = 5
 
@@ -322,86 +294,25 @@ def display_dose(mapType, sex, krefttype, doseparameter, strukturer, clickData):
         for k in list(selection):
             navn = get_kommune_from_nr(k)
             dff = df_folketall.query(f'Kommunenavn == "{navn}"')
-
             bias = dff["Bias D10"].values[0]
             n = int(dff[sex_krefttype].sum(numeric_only=True))
+
             dict_pasient['kommune'] += [navn] * n
             dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
 
-    elif mapType == "HF":
-        selection_list = [unique_HF[k] for k in list(selection)]
-        selection_kommuner = {hf: list(df_folketall.query(f'HF == "{hf}"')["Kommunenavn"]) for hf in selection_list}
-        dict_pasient = {'kommune': list(), 'HF': list(), 'Dose': list()}
+    else:
+        selection_list = [unique[mapType][k] for k in list(selection)]
+        selection_kommuner = {item: list(df_folketall.query(f'{kolonnenavn[mapType]} == "{item}"')["Kommunenavn"]) for item in selection_list}
+        dict_pasient = {'kommune': list(), mapType: list(), 'Dose': list()}
 
-        for hf, kommuner in selection_kommuner.items():
-            for k in kommuner:
-                dff = df_folketall.query(f'Kommunenavn == "{k}"')
-
-                bias = dff["Bias D10"].values[0]
-                n = int(dff[sex_krefttype].sum(numeric_only=True))
-                dict_pasient['kommune'] += [k] * n
-                dict_pasient['HF'] += [hf] * n
-                dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
-
-    elif mapType == "RHF":
-        selection_list = [unique_RHF[k] for k in list(selection)]
-        selection_kommuner = {thisUnit: list(df_folketall.query(f'RHF == "{thisUnit}"')["Kommunenavn"]) for thisUnit in selection_list}
-        dict_pasient = {'kommune': list(), 'RHF': list(), 'Dose': list()}
-
-        for thisUnit, kommuner in selection_kommuner.items():
-            for k in kommuner:
-                dff = df_folketall.query(f'Kommunenavn == "{k}"')
-
-                bias = dff["Bias D10"].values[0]
-                n = int(dff[sex_krefttype].sum(numeric_only=True))
-                dict_pasient['kommune'] += [k] * n
-                dict_pasient['RHF'] += [thisUnit] * n
-                dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
-
-    elif mapType == "enhet":
-        selection_list = [unique_enhet[k] for k in list(selection)]
-        selection_kommuner = {thisUnit: list(df_folketall.query(f'Stråleterapienhet == "{thisUnit}"')["Kommunenavn"]) for thisUnit in selection_list}
-        dict_pasient = {'kommune': list(), 'enhet': list(), 'Dose': list()}
-
-        for thisUnit, kommuner in selection_kommuner.items():
-            for k in kommuner:
-                dff = df_folketall.query(f'Kommunenavn == "{k}"')
-
-                bias = dff["Bias D10"].values[0]
-                n = int(dff[sex_krefttype].sum(numeric_only=True))
-                dict_pasient['kommune'] += [k] * n
-                dict_pasient['enhet'] += [thisUnit] * n
-                dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
-
-    elif mapType == "bergenoslo":
-        selection_kommuner = {thisUnit: list(df_folketall.query(f'bergenoslo == {thisUnit}')["Kommunenavn"]) for thisUnit in list(selection)}
-        dict_pasient = {'kommune': list(), 'bergenoslo': list(), 'Dose': list()}
-
-        for thisUnit, kommuner in selection_kommuner.items():
-            for k in kommuner:
-                dff = df_folketall.query(f'Kommunenavn == "{k}"')
-                thisName = thisUnit == 0 and "Bergen" or "Oslo"
-
-                bias = dff["Bias D10"].values[0]
-                n = int(dff[sex_krefttype].sum(numeric_only=True))
-                dict_pasient['kommune'] += [k] * n
-                dict_pasient['bergenoslo'] += [thisName] * n
-                dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
-
-    elif mapType == "fylke":
-        selection_list = [fylkenavn[k] for k in list(selection)]
-        selection_kommuner = {thisUnit: list(df_folketall.query(f'Fylkenavn == "{thisUnit}"')["Kommunenavn"]) for thisUnit in selection_list}
-        dict_pasient = {'kommune': list(), 'fylke': list(), 'Dose': list()}
-
-        for thisUnit, kommuner in selection_kommuner.items():
+        for item, kommuner in selection_kommuner.items():
             for k in kommuner:
                 dff = df_folketall.query(f'Kommunenavn == "{k}"')
                 bias = dff["Bias D10"].values[0]
                 n = int(dff[sex_krefttype].sum(numeric_only=True))
                 dict_pasient['kommune'] += [k] * n
-                dict_pasient['fylke'] += [thisUnit] * n
                 dict_pasient['Dose'] += list(np.random.normal(mean_D10 + bias, std_D10, n))
-
+                dict_pasient[mapType] += [item] * n
 
     df_pasient = pd.DataFrame(dict_pasient)
 

@@ -25,29 +25,9 @@ import numpy as np
 RTPark = Flask(__name__)
 
 def connection():
-    conn = pyodbc.connect("Driver={SQL Server};SERVER={VIR-APP6666\SQLEXPRESS};database=testregister;")
+    conn = pyodbc.connect("Driver={SQL Server};SERVER={PC163196\SQLEXPRESS};database=testregister;")
     return conn
 
-"""@RTPark.route("/plot.png")
-def plot_png():
-    # Burde dette være en async operasjon?
-    timebefore = time()
-    fig = create_figure()
-    timeafter = time()
-    print(f"Time spent to create figure: {timeafter-timebefore:.1f} s.")
-    output = io.BytesIO()
-    FigureCanvas(fig).print_png(output)
-    return Response(output.getvalue(), mimetype="image/png")
-
-def create_figure():
-    fig, ax = plt.subplots(figsize = (8,4))
-
-    labels = {}
-    colorPicker = {}
-
-    data_for_median = {}
-
-    return fig"""
 
 @RTPark.route("/")
 def main_page():
@@ -101,7 +81,6 @@ def main_page():
             dataPerStructure[structureName] = dict()
         
         dataPerStructure[structureName][patientName] = { 'dose': thisDose, 'volume':thisVolume}
-        
 
     # Make Plotly plot
     try:
@@ -168,7 +147,7 @@ def main_page():
 
     conn.close()
     """
-    return render_template("dist/index.html", patients = patients, patientsWithStructures=structureBasis, graphJSON=graphJSON)
+    return render_template("dist/indexPlotly.html", patients = patients, patientsWithStructures=structureBasis, graphJSON=graphJSON)
 
 def main():
     http = WSGIServer(('', 5000), RTPark.wsgi_app)

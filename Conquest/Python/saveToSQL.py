@@ -8,16 +8,27 @@ from pynetdicom import AE, evt, build_role, debug_logger
 from pynetdicom.sop_class import PatientRootQueryRetrieveInformationModelGet, CTImageStorage, RTDoseStorage, RTIonPlanStorage, RTStructureSetStorage
 from time import time
 
-connectionString = "Driver={SQL Server};SERVER={VIR-APP6666\SQLEXPRESS};database=testregister;"
+#connectionString = "Driver={SQL Server};SERVER={VIR-APP6666\SQLEXPRESS};database=testregister;"
+connectionString = "Driver={SQL Server};SERVER={PC163196\SQLEXPRESS};database=testregister;"
 
 last_id = -1
 global_rd = None
-global_rs = None
+global_rs_seq = list()
+
+def isCBCTandCT(rs_seq):
+	isCBCT = isCT = False
+	for rs in rs_seq:
+		if "BSCB" in rs.SeriesDescription:
+			isCBCT = True
+		elif "BSPC" or "SBPC" in rs.SeriesDescription:
+			isCT = True
+
+	return isCBCT and isCT
 
 def to_sql(ds):
 	global last_id
 	global global_rd
-	global global_rs
+	global global_rs_seq
 
 	print("Patient Name: ", ds.PatientName)
 	print("Study description: ", ds.StudyDescription)
@@ -27,10 +38,8 @@ def to_sql(ds):
 
 	if ds.Modality == "RTSTRUCT":
 		print("(RTSTRUCT)")
-		if not "ROI" in ds.SeriesDescription: # Especially for the pancreas patient, to pick a single RTSTRUCT
-			return
 
-		global_rs = ds
+		global_rs_seq.append(ds)
 		conn = pyodbc.connect(connectionString)
 		cursor = conn.cursor()
 		numberOfStructures = len(ds.ROIContourSequence)
@@ -73,6 +82,7 @@ def to_sql(ds):
 
 	elif ds.Modality == "CT":
 		print("(CT)")
+
 		conn = pyodbc.connect(connectionString)
 		cursor = conn.cursor()
 		if last_id < 0:
@@ -103,36 +113,49 @@ def to_sql(ds):
 	else:
 		return
 
-	if global_rd and global_rs:
-		print("(RTDOSE + RTSTRUCT)")
+	if global_rd and isCBCTandCT(global_rs_seq):
+		print("Found (RTDOSE + RTSTRUCT) pair with both CT and CBCT")
 		conn = pyodbc.connect(connectionString)
 		cursor = conn.cursor()
 		print("Calculating DVHs... ", end="")
-		numberOfStructures = len(global_rs.ROIContourSequence)
-		print(f"({numberOfStructures}) ", end=" ")
-		for n in range(numberOfStructures):
-			dose_resolution = global_rd.PixelSpacing[0]
-			interpolation = (dose_resolution/4)
-			print(f"Calculating... ",end="")
-			timebefore = time()
-			dvh = dvhcalc.get_dvh(global_rs, global_rd, n+1)#, calculate_full_volume=True, use_structure_extents=True, 
-				#interpolation_resolution=interpolation, interpolation_segments_between_planes=2)
-			timeafter = time()
-			print(f"{dvh.name} done ({timeafter-timebefore:.1f} s). ", end="")
 
-			volume = dvh.volume
-			string_dose_gy = ",".join([f"{d:.3f}" for d in dvh.bincenters])
-			string_volume_percent = ",".join([f"{v:.3f}" for v in dvh.relative_volume.counts])
-			name = dvh.name
+		for rs in global_rs_seq:
+			numberOfStructures = len(rs.ROIContourSequence)
+			print(f"({numberOfStructures}) ", end=" ")
+			for n in range(numberOfStructures):
+				dose_resolution = global_rd.PixelSpacing[0]
+				interpolation = (dose_resolution/4)
+				print(f"Calculating... ",end="")
+				timebefore = time()
+				dvh = dvhcalc.get_dvh(rs, global_rd, n+1)#, calculate_full_volume=True, use_structure_extents=True, 
+					#interpolation_resolution=interpolation, interpolation_segments_between_planes=2)
+				timeafter = time()
+				print(f"{dvh.name} done ({timeafter-timebefore:.1f} s). ", end="")
 
-			#print(f"""INSERT INTO testregister.dbo.DVH (RTImageSeriesID, StructureName, StructureVolume_cc, DVH_dose_Gy, DVH_volume_percent) VALUES ({last_id},'{name}',{round(volume,2)},'{string_dose_gy}','{string_volume_percent}')""")
+				volume = dvh.volume
+				string_dose_gy = ",".join([f"{d:.3f}" for d in dvh.bincenters])
+				string_volume_percent = ",".join([f"{v:.3f}" for v in dvh.relative_volume.counts])
+				name = dvh.name
+				if "BSCB" in rs.SeriesDescription:
+					seriesDescription = "ConeBeamCT"
+				elif "SBPC" in rs.SeriesDescription or "BSPC" in rs.SeriesDescription:
+					seriesDescription = "PlanningCT"
+				else:
+					seriesDescription = rs.SeriesDescription
+					
+				print("Series Description: ", seriesDescription)
 
-			cursor.execute("""INSERT INTO testregister.dbo.DVH (RTImageSeriesID, StructureName, 
-					StructureVolume_cc, DVH_dose_Gy, DVH_volume_percent) VALUES (?,?,?,?,?)""",
-					last_id, name, round(volume,2), string_dose_gy, string_volume_percent)
-			print("Inserted!")
+				try:
+					cursor.execute("""INSERT INTO testregister.dbo.DVH (RTImageSeriesID, StructureName, 
+							StructureVolume_cc, DVH_dose_Gy, DVH_volume_percent, StructureDescription) VALUES (?,?,?,?,?,?)""",
+							last_id, name, round(volume,2), string_dose_gy, string_volume_percent, seriesDescription)
+				except Exception as e:
+					print("Insertion error! ", e)
+
+				print("Inserted!")
+		
 		global_rd = None
-		global_rs = None
+		global_rs_seq = list()
 
 		conn.commit()
 
@@ -145,7 +168,7 @@ def handle_store(event):
 uid = sys.argv[1]
 
 handlers = [(evt.EVT_C_STORE, handle_store)]
-ae = AE(ae_title="PYSAVETOSQL")
+ae = AE(ae_title="PYPC163196")
 ae.add_requested_context(PatientRootQueryRetrieveInformationModelGet)
 ae.add_requested_context(CTImageStorage)
 ae.add_requested_context(RTDoseStorage)
